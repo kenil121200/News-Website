@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>NEWS</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+  <body>
+    <script src="script.js"></script>
+    <div class="header">
+        <a href="index.html"><p>THE WORLD NEWS</p></a>
+    </div>
+
+    <div class="topnav" id="myTopnav">
+        <a href="#">India</a>
+        <a href="#">World</a>
+        <a href="business.html">Business</a>
+        <a href="#">Entertainment</a>
+        <a href="#">Tech</a>
+        <a href="#">Cricket</a>
+        <a href="corona.html">Corona virus Live Update</a>
+        <input type="text" placeholder="Search..">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <script>
+        function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+    </script>
+
+<div class="w3-content w3-section">
+    <img class="mySlides" src="https://i.ytimg.com/vi/-Ii2kFWhRlc/maxresdefault.jpg" style="width:100%;height:230px">
+    <img class="mySlides" src="https://m.media-amazon.com/images/S/aplus-media/vc/1cdaa9c0-6b82-4810-9282-41545419ef3f.__CR0,0,970,300_PT0_SX970_V1___.jpg" style="width:100%;height:230px">
+    <img class="mySlides" src="https://media.iqads.ro/2014/10/lee-cooper-watches-ad-full.jpg" style="width:100%;height:230px">
+    <img class="mySlides" src="https://tuffclassified.com/oc-content/uploads/11407/1140534.jpg" style="width:100%;height:230px">
+    <img class="mySlides" src="https://blog.atrivity.com/hs-fs/hubfs/NIKE-CORONAVIRUS-e1585108435250.jpg?width=1023&name=NIKE-CORONAVIRUS-e1585108435250.jpg" style="width:100%;height:230px">
+  </div>
+  
+  <script>
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000);
+  }
+  </script>
+    <div class="news">
+        <div class="topnews">
+            <h1>Top News</h1>
+            <a href="https://www.ndtv.com/india-news/rajasthan-crisis-at-late-night-meet-ashok-gehlot-cabinet-discusses-governor-kalraj-mishra-6-points-2268553?pfrom=home-topscroll">
+                <img src="https://c.ndtvimg.com/2020-07/tfnki6p8_ashokgehlotclpmeetndtv650_650x400_25_July_20.jpg?downsize=570:351" class="topimg">
+                <p>Will Even Go To Rashtrapati Bhavan If Needed, Ashok Gehlot Tells MLAs</p>
+            </a>
+        </div>
+
+        <div class="instantnews">
+            <h1>Instant News</h1>
+            <table class="instanttable">
+                <tr>
+                    <td>
+                        <a href="https://www.ndtv.com/tamil-nadu-news/chennai-harassed-by-abvp-national-president-dr-subbiah-shanmugam-over-parking-spot-says-chennai-woman-2268731?pfrom=home-topstories" class="instanta">
+                            <img src="https://c.ndtvimg.com/2020-07/ms7nl10o_dr-subbiah-shanmugam-ndtv_120x90_25_July_20.jpg?downsize=105:79" class="instantimg">
+                            <p class="instantp">Chief Of BJP-Linked Student Group Charged For Harassing Chennai Woman</p>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.ndtv.com/india-news/covid-19-kits-import-licence-of-3-firms-in-india-cancelled-after-us-action-2268845?pfrom=home-topstories"class="instanta">
+                            <img src="https://c.ndtvimg.com/2020-02/eptncpr8_coronavirus-generic-istock-240_120x90_08_February_20.jpg?downsize=105:79" class="instantimg">
+                            <p class="instantp">Covid Kits Import Licence Of 3 Firms In India Cancelled After US Action</p>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://www.ndtv.com/delhi-news/coronavirus-delhi-covid-19-recovery-rate-crosses-87-active-cases-lowest-in-7-weeks-2268826?pfrom=home-topstories"class="instanta">
+                            <img src="https://c.ndtvimg.com/2020-06/qk484214_delhi-coronavirus-hospital-pti-_120x90_09_June_20.jpg?downsize=105:79" class="instantimg">
+                            <p class="instantp">Delhi's COVID Recovery Rate Crosses 87%, Active Cases Lowest In 7 Weeks</p>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.ndtv.com/india-news/tamil-nadu-coronavirus-cases-cross-2-lakh-mark-after-highest-one-day-spike-of-6-989-cases-2268815?pfrom=home-topstories"class="instanta">
+                            <img src="https://c.ndtvimg.com/2020-03/rfbmstp8_coronavirus-india_240x180_21_March_20.jpg?downsize=105:79" class="instantimg">
+                            <p class="instantp">Tamil Nadu Coronavirus Cases Cross 2 Lakh After Highest One-Day Spike</p>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://www.carandbike.com/news/ngt-slams-road-ministry-over-delay-in-guidelines-on-scrapping-of-vehicles-2268851?pfrom=home-topstories"class="instanta">
+                            <img src="https://c.ndtvimg.com/2019-09/11q9dejo_vehicle-scrapping-_120x90_13_September_19.jpg?downsize=105:79" class="instantimg">
+                            <p class="instantp">Green Court Slams Ministry Over Delay In Vehicle Scrappage Guidelines</p>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.ndtv.com/india-news/madhya-pradesh-chief-minister-shivraj-singh-chouhan-tests-coronavirus-positive-2268652?pfrom=home-topstories"class="instanta">
+                            <img src="https://c.ndtvimg.com/2020-07/e98rofc_shivrajchouhancovid_120x90_25_July_20.jpg?downsize=105:79" class="instantimg">
+                            <p class="instantp">Shivraj Singh Chouhan Tests Covid Positive, Admitted To Hospital</p>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="videoview">
+        <div class="videoframe">
+            <div class="videocontainer">
+                <div class="myvideo">
+                    <iframe width="100%"  
+                        src="https://www.youtube.com/embed/BMyeSJJfOdE?controls=1" allowfullscreen>
+                    </iframe>
+                </div>
+              
+                <div class="myvideo">
+                    <iframe width="100%"  
+                        src="https://www.youtube.com/embed/wu6fY-VaF8M?controls=1" allowfullscreen>
+                    </iframe>
+                </div>
+              
+                <div class="myvideo">
+                    <iframe width="100%"  
+                        src="https://www.youtube.com/embed/yvKDwgLe-zI?controls=1" allowfullscreen>
+                    </iframe>
+                </div>
+                  
+                <div class="myvideo">
+                    <iframe width="100%" 
+                        src="https://www.youtube.com/embed/1PaxkosxFSg?controls=1" allowfullscreen>
+                    </iframe>
+                </div>
+              
+                <div class="myvideo">
+                    <iframe width="100%" 
+                        src="https://www.youtube.com/embed/Z6UL5dql2Xo?controls=1" allowfullscreen>
+                    </iframe>
+                </div>
+                  
+                <div class="myvideo">
+                    <iframe width="100%" 
+                        src="https://www.youtube.com/embed/zKkVok_P31s?controls=1" allowfullscreen>
+                    </iframe>
+                </div>
+                  
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+              <script>
+              var slideIndex = 1;
+              showSlides(slideIndex);
+              
+              function plusSlides(n) {
+                showSlides(slideIndex += n);
+              }
+              
+              function currentSlide(n) {
+                showSlides(slideIndex = n);
+              }
+              
+              function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("myvideo");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex-1].style.display = "block";
+              }
+              </script>
+        </div>
+
+        <div class="topstories">
+            <h1>Top Stories</h1>
+            <table class="storiestable">
+                <tr>
+                    <td>
+                        <a href="https://www.ndtv.com/india-news/mann-ki-baat-pm-modi-pays-tribute-to-kargil-heroes-thanks-to-the-courage-of-our-armed-forces-india-showed-great-strength-in-kargil-2268975?pfrom=home-topstories" class="storiesa">
+                            <img src="https://c.ndtvimg.com/2019-07/slesrbbg_mann-ki-baat-pm-modi-twitter_120x90_28_July_19.jpg?downsize=105:79" class="storiesimg">
+                            <p class="storiesp">Pakistan Tried To "Backstab" India: PM During Tribute To Kargil Heroes</p>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.ndtv.com/delhi-news/senior-delhi-cop-on-duty-dies-after-being-hit-by-speeding-vehicle-police-2268921?pfrom=home-topstories"class="storiesa">
+                            <img src="https://c.ndtvimg.com/2020-07/v0uqo3os_delhi-acp-240_120x90_26_July_20.jpg?downsize=105:79" class="storiesimg">
+                            <p class="storiesp">Senior Delhi Cop On Duty Dies After Being Hit By Speeding Vehicle: Police</p>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://www.ndtv.com/india-news/piyush-goyals-those-who-looted-nation-reply-to-rahul-gandhi-on-railways-2268761?pfrom=home-topstories"class="storiesa">
+                            <img src="https://c.ndtvimg.com/2020-05/3he9nh0g_piyush-goyal_120x90_29_May_20.jpg?downsize=105:79" class="storiesimg">
+                            <p class="storiesp">Minister's "Those Who Looted Nation" Reply To Rahul Gandhi On Railways</p>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.ndtv.com/world-news/coronavirus-paleogenomics-study-ancient-teeth-show-that-epidemics-began-much-further-back-in-history-2268936?pfrom=home-topstories"class="storiesa">
+                            <img src="https://c.ndtvimg.com/2020-07/svps0rcc_-teeth-generic-unsplash_120x90_26_July_20.jpg?downsize=105:79" class="storiesimg">
+                            <p class="storiesp">Ancient Teeth Show That Epidemics Began Much Further Back In History</p>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="imageview">
+        <div class="imagegallery">
+           <table class="imagetable">
+               <tr class="imagerow">
+                   <td>
+                    <table class="quicktable">
+                        <th colspan="3"><h1>Quick Links</h1></th>
+                        <tr>
+                            <td>
+                                <a href="https://www.ndtv.com/india-news/mann-ki-baat-pm-modi-pays-tribute-to-kargil-heroes-thanks-to-the-courage-of-our-armed-forces-india-showed-great-strength-in-kargil-2268975?pfrom=home-topstories" class="quicka">
+                                    <p class="quickp">Pakistan Tried To "Backstab" India: PM During Tribute To Kargil Heroes</p>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="https://www.ndtv.com/delhi-news/senior-delhi-cop-on-duty-dies-after-being-hit-by-speeding-vehicle-police-2268921?pfrom=home-topstories"class="quicka">
+                                    <p class="quickp">Senior Delhi Cop On Duty Dies After Being Hit By Speeding Vehicle: Police</p>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="https://www.ndtv.com/world-news/coronavirus-paleogenomics-study-ancient-teeth-show-that-epidemics-began-much-further-back-in-history-2268936?pfrom=home-topstories"class="quicka">
+                                    <p class="quickp">Ancient Teeth Show That Epidemics Began Much Further Back In History</p>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://www.ndtv.com/india-news/piyush-goyals-those-who-looted-nation-reply-to-rahul-gandhi-on-railways-2268761?pfrom=home-topstories"class="quicka">
+                                    <p class="quickp">Minister's "Those Who Looted Nation" Reply To Rahul Gandhi On Railways</p>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="https://www.ndtv.com/world-news/coronavirus-paleogenomics-study-ancient-teeth-show-that-epidemics-began-much-further-back-in-history-2268936?pfrom=home-topstories"class="quicka">
+                                    <p class="quickp">Ancient Teeth Show That Epidemics Began Much Further Back In History</p>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="https://www.ndtv.com/world-news/coronavirus-paleogenomics-study-ancient-teeth-show-that-epidemics-began-much-further-back-in-history-2268936?pfrom=home-topstories"class="quicka">
+                                    <p class="quickp">Ancient Teeth Show That Epidemics Began Much Further Back In History</p>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+               </tr>
+               <tr class="imagerow">
+                    <td>
+                        
+                    </td>
+                </tr>
+           </table> 
+        </div>
+        <div class="youmay">
+            <h1>You May Like</h1>
+            <table class="youtable">
+                <tr>
+                    <td>
+                        <a href="https://www.ndtv.com/india-news/piyush-goyals-those-who-looted-nation-reply-to-rahul-gandhi-on-railways-2268761?pfrom=home-topstories"class="youa">
+                            <img src="https://c.ndtvimg.com/2020-05/3he9nh0g_piyush-goyal_120x90_29_May_20.jpg?downsize=105:79" class="youimg">
+                            <p class="youp">Minister's "Those Who Looted Nation" Reply To Rahul Gandhi On Railways</p>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://www.ndtv.com/delhi-news/senior-delhi-cop-on-duty-dies-after-being-hit-by-speeding-vehicle-police-2268921?pfrom=home-topstories"class="youa">
+                            <img src="https://c.ndtvimg.com/2020-07/v0uqo3os_delhi-acp-240_120x90_26_July_20.jpg?downsize=105:79" class="youimg">
+                            <p class="youp">Senior Delhi Cop On Duty Dies After Being Hit By Speeding Vehicle: Police</p>
+                        </a>
+                    </td>
+                </tr>
+            </table>       
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+        <H1>The World News</H1>
+        <table class="center"width="40%"cellspacing="8"cellpadding="10">
+          <tr>
+            <td><a href="#">Contact us</a></td>
+            <td><a href="#">Create your Ad</a></td>
+            <td><a href="#">Term of use</a></td>
+          </tr>
+          <tr>
+            <td><a href="#">About us</a></td>
+            <td><a href="#">Advertise with us</a></td>
+            <td><a href="#">e-paper</a></td>
+          </tr>
+          <tr>
+            <td><a href="#">Careers</a></td>
+            <td><a href="#">Feedback</a></td>
+            <td><a href="#">Policy</a></td>
+          </tr>
+          <tr>
+            <td><a href="#">Press</a></td>
+            <td><a href="#">Archieves</a></td>
+            <td><a href="#">RSS</a></td>
+          </tr>
+        </table>
+        <div class="icon" align: "right">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-pinterest"></a>
+                <a href="#" class="fa fa-rss"></a>
+        </div>
+        </div>
+        </footer>
+  </body>
+</html>
